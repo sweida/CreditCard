@@ -1,5 +1,25 @@
 <!--index.wxml-->
 <view class="container">
+
+
+    <view class="cardlist">
+      <image class="card-logo" src="../../images/card/f1.png"></image>
+      <span>农业</span>
+      <view class="day">03</view>
+      <view>1000.00</view>
+    </view>
+    <view class="cardlist">
+      <image class="card-logo" src="../../images/card/f3.png"></image>
+      <span>工商</span>
+      <view>23</view>
+      <view>1000.00</view>
+    </view>
+    <view class="cardlist">
+      <image class="card-logo" src="../../images/card/f30.png"></image>
+      <span>汇丰</span>
+      <view>23</view>
+      <view>1000.00</view>
+    </view>
   <view class="list">
     <image src="/images/list1.jpg" class="list-img"></image>
   </view>

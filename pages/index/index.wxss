@@ -26,3 +26,26 @@
   width: 200rpx;
   height: 100rpx;
 }
+
+
+.cardlist{
+  width: 90%;
+  border-radius: 20rpx;
+  margin: 20rpx auto;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx;
+  box-sizing: border-box;
+  box-shadow: 2rpx 4rpx 20rpx #ccc;
+
+}
+  .card-logo{
+    width:100rpx;
+    height: 100rpx;
+  }
+  .day{
+    font-size: 48rpx;
+    font-weight: bold;
+  }
