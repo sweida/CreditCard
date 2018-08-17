@@ -15,6 +15,11 @@ Page({
       url: '../addCard/addCard'
     })
   },
+  goDetail() {
+    wx.navigateTo({
+      url: '../detail/detail'
+    })
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({

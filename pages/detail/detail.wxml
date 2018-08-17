@@ -1,0 +1,49 @@
+<!--pages/detail/detail.wxml-->
+<!-- <text>pages/detail/detail.wxml</text> -->
+<view class="container">
+
+  <view class="head">
+    <view class="title">
+      账单详情
+      <image src="../../images/edit.png" class="edit"></image>
+    </view>
+    <view class="month"><image src="../../images/date.png"></image>08月份账单</view>
+  </view>
+
+  <view class="card">
+    <view class="left"></view>
+    <view class="right"></view>
+    <image src="../../images/card/f4-bg.png" class="bg"></image>
+    <view class="name">
+      <image src="../../images/card/f4.png" class="logo"></image>
+      交通银行
+    </view>
+    <view class="edu">卡片额度 50000</view>
+    <view class="buttom">
+      <text>还款日8月20日</text>
+      <!-- <view class="edu">卡片额度 50000</view> -->
+      <text>56天免息期</text>
+      <image src="../../images/yinlian.png" class="yinlian"></image>
+    </view>
+  </view>
+  <view class="main">
+    <view>本期应还金额</view>
+    <view class="money">
+      5000.00
+      <icon type="info" color="#ff2b33" size="20"></icon>
+    </view>
+
+    <view class="text-buttom">
+      <view>
+        <view class="txt">距还款日</view>
+        <text class="red">3</text>天
+      </view>
+      <view>
+        <view class="txt">剩余额度</view>
+        <text>20000.00</text>
+      </view>
+    </view>
+  </view>
+
+  
+</view>

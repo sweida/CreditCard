@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/list/list",
-    "pages/addCard/addCard"
+    "pages/addCard/addCard",
+    "pages/detail/detail",
+    "pages/cardList/cardList"
   ],
   "window": {
     "backgroundTextStyle": "light",

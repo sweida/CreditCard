@@ -1,0 +1,35 @@
+/* pages/cardList/cardList.wxss */
+.content{
+  /* width: 92%;
+  margin: auto; */
+  background: #fff;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+.cardlist{
+  border-bottom: 2rpx solid #f5f5f5;
+  display: flex;
+  align-items: center;
+  /* padding-bottom: 10rpx; */
+  font-size: 32rpx;
+  line-height: 120rpx;
+  justify-content: space-between;
+}
+.label{
+  display: flex;
+  align-items: center;
+}
+.cardlist .logo{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 40rpx;
+}
+.cardlist .right{
+  width: 22rpx;
+  height: 22rpx;
+  border-right: 3rpx solid #ccc;
+  border-bottom: 3rpx solid #ccc;
+  transform:rotate(45deg);
+  -webkit-transform:rotate(-45deg);
+  /* border-radius: 50%; */
+}
