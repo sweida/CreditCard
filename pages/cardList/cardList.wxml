@@ -1,6 +1,6 @@
 <!--pages/cardList/cardList.wxml-->
 <view class="content">
-  <view class="cardlist" wx:for="{{cardData}}" wx:for-item="item" bindtap="selectCard">
+  <view class="cardlist" wx:for="{{cardData}}" wx:key="id" wx:for-item="item" bindtap="selectCard" data-index="{{item.id}}">
     <view class="label">
       <image src="../../images/card/f{{item.id}}.png" class="logo"></image>
       {{item.name}}

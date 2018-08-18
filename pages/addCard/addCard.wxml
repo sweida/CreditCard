@@ -1,10 +1,41 @@
+<view class="content">
+  <view class="cardlist" bindtap="selectCard">
+    <view class="label">所属银行</view>
+    <view class="select">
+      <text class="{{cardName ? 'active' : ''}}">{{cardName || '选择发卡银行'}}</text>
+      <view class="right"></view>
+    </view>
+  </view>
 
-<view bindtap="selectCard">
-  所属银行
+  <view class="cardlist">
+    <view class="label">账单日</view>
+    <picker bindchange="startPicker" value="{{index}}" range="{{arrayDate}}">
+      <view class="select">
+        <text class="{{startDate ? 'active' : ''}}">{{arrayDate[startDate] || '请选择账单日'}}</text>
+        <view class="right"></view>
+      </view>
+    </picker>
+  </view>
+
+  <view class="cardlist">
+    <view class="label">还款日</view>
+    <picker bindchange="endPicker" value="{{index}}" range="{{arrayDate}}">
+      <view class="select">
+        <text class="{{endDate ? 'active' : ''}}">{{arrayDate[endDate] || '请选择还款日'}}</text>
+        <view class="right"></view>
+      </view>
+    </picker>
+  </view>
+
+  <view class="cardlist">
+    <view class="label">卡片额度</view>
+    <view class="select">
+      <input class="count" type="number" placeholder="请填写卡片额度"  placeholder-class="placetext" maxlength="7"/>
+    </view>
+  </view>
+  
+  <button siez="default" type="warn" bindtap="submit">
+    确认并提交
+  </button>  
 </view>
-<view>
-  账单日
-</view>
-<view>
-  还款日
-</view>
+

@@ -1,1 +1,55 @@
 /* pages/addCard.wxss */
+.content{
+  background: #fff;
+  height: 100%;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+.cardlist{
+  border-bottom: 2rpx solid #f5f5f5;
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+  line-height: 120rpx;
+  justify-content: space-between;
+}
+.cardlist:last-child{
+  border-bottom: none;
+}
+.label{
+  font-weight: bold;
+}
+.cardlist .right{
+  width: 22rpx;
+  height: 22rpx;
+  border-right: 3rpx solid #ccc;
+  border-bottom: 3rpx solid #ccc;
+  transform:rotate(45deg);
+  -webkit-transform:rotate(-45deg);
+  margin-left:10rpx;
+}
+.cardlist .select{
+  display: flex;
+  align-items: center;
+  color: #aaa;
+}
+.cardlist .active{
+  color: #333;
+}
+.placetext{
+  color: #aaa;
+  font-size: 32rpx;
+}
+.count{
+  text-align: right;
+  color: #333;
+  font-size: 36rpx;
+}
+button{
+  margin-top: 100rpx;
+  border: none;
+  background: #ff585b !important;
+  font-size: 32rpx !important;
+  font-weight: bold;
+  line-height: 96rpx;
+}
