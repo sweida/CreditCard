@@ -6,7 +6,7 @@
       <text>账单详情</text>
       <image src="../../images/edit.png" class="edit" bindtap="edit"></image>
     </view>
-    <view class="month"><image src="../../images/date.png"></image>账单日：{{month-1}}月{{startDate}}日</view>
+    <view class="month"><image src="../../images/date.png"></image>{{month-1}}月{{startDate}}日账单</view>
   </view>
 
   <view class="card">
