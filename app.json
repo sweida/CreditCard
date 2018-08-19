@@ -1,11 +1,12 @@
 {
   "pages": [
+    "pages/detail/detail",
     "pages/index/index",
     "pages/logs/logs",
     "pages/list/list",
     "pages/addCard/addCard",
-    "pages/detail/detail",
-    "pages/cardList/cardList"
+    "pages/cardList/cardList",
+    "pages/editCard/editCard"
   ],
   "window": {
     "backgroundTextStyle": "light",

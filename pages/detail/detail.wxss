@@ -108,9 +108,16 @@
 .red{
   color: #ff2b33;
 }
+.addMoney{
+  width: 50rpx;
+  height: 50rpx;
+}
 .text-buttom{
   display: flex;
   margin-top: 30rpx;
+  border-bottom: 2rpx dashed #ccc;
+  padding-bottom: 30rpx;
+  margin-bottom: 30rpx; 
 }
 .text-buttom view{
   flex: 1;
@@ -126,3 +133,55 @@
   height: 30rpx;
   border-r
 } */
+button[type="primary"]{
+  background: #74d458 !important;
+}
+
+.inputDialog{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 100;
+}
+.inputDialog .bg{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .3);
+  transition-duration: 0.3s;
+  transition: all .5s;
+}
+.dialogMain{
+  position: relative;
+  width: 90%;
+  height: 340rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  padding: 40rpx;
+  box-sizing: border-box;
+  margin: 50% auto;
+  font-size: 36rpx;
+}
+.inputBox{
+  display: flex;
+  margin: 70rpx auto 10rpx;
+}
+.inputBox input{
+  border-bottom: 1px solid #ddd;
+  width: 55%;
+  padding-bottom: 20rpx;
+  margin-right: 50rpx;
+}
+.oldCount{
+  font-size: 28rpx;
+  color: #ccc;
+}
+.inputBox button{
+  color: #74d458;
+  border-color: #74d458;
+  line-height:70rpx;
+  height:70rpx;
+  font-size: 32rpx;
+}

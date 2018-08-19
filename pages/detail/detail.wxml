@@ -1,13 +1,12 @@
 <!--pages/detail/detail.wxml-->
-<!-- <text>pages/detail/detail.wxml</text> -->
 <view class="container">
 
   <view class="head">
     <view class="title">
-      账单详情
-      <image src="../../images/edit.png" class="edit"></image>
+      <text>账单详情</text>
+      <image src="../../images/edit.png" class="edit" bindtap="edit"></image>
     </view>
-    <view class="month"><image src="../../images/date.png"></image>08月份账单</view>
+    <view class="month"><image src="../../images/date.png"></image>账单日：{{month-1}}月{{startDate}}日</view>
   </view>
 
   <view class="card">
@@ -18,32 +17,43 @@
       <image src="../../images/card/f4.png" class="logo"></image>
       交通银行
     </view>
-    <view class="edu">卡片额度 50000</view>
+    <view class="edu">卡片额度 {{allCount}}</view>
     <view class="buttom">
-      <text>还款日8月20日</text>
-      <!-- <view class="edu">卡片额度 50000</view> -->
-      <text>56天免息期</text>
+      <text>还款日{{month}}月{{endDate}}日</text>
+      <text>{{endDate <  startDate ? (endDate + 61 -startDate) : (endDate + 30 - startDate)}}天免息期</text>
       <image src="../../images/yinlian.png" class="yinlian"></image>
     </view>
   </view>
   <view class="main">
-    <view>本期应还金额</view>
+    <view>{{oldCount=='0.00' ? '暂无账单' : '本期应还金额'}}</view>
     <view class="money">
-      5000.00
-      <icon type="info" color="#ff2b33" size="20"></icon>
+      <text>{{oldCount}}</text>
+      <image src="../../images/pen.png" class="addMoney" bindtap="addMoney"></image>
     </view>
 
     <view class="text-buttom">
       <view>
         <view class="txt">距还款日</view>
-        <text class="red">3</text>天
+        <text class="red">{{overDay}}</text>天
       </view>
       <view>
         <view class="txt">剩余额度</view>
-        <text>20000.00</text>
+        <text>{{allCount-oldCount}}</text>
       </view>
     </view>
+
+    <button siez="default" type="primary" bindtap="payOfBills">已还清账单</button>
   </view>
 
-  
+  <view class="inputDialog" wx-if="{{showDialog}}">
+    <view class="bg" bindtap="addMoney"></view>
+    <view class="dialogMain">
+      <text>输入账单金额</text>
+      <view class="inputBox">
+        <input type="digit" bindinput="inputCount" />
+        <button siez="mini" plain="true" class="submitInput" bindtap="submitInput">确认→</button>
+      </view>
+      <text class="oldCount">当前账单：{{oldCount}}</text>
+    </view>
+  </view>
 </view>
